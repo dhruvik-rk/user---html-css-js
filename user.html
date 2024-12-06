@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    
+    <form id="recordForm" onsubmit="return validateForm()" method="post">
+        <h2>Registration form</h2>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="enter first name">
+        <span id="firstnameError" class="error-message"></span>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="enter last name">
+        <span id="lastnameError" class="error-message"></span>
+
+        <label for="address">Address</label>
+        <textarea name="address" rows="3" cols="30" id="address" placeholder="enter address"></textarea>
+        <span id="addressError" class="error-message"></span>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <hr style="width: 80%; margin-top: 3%;">
+    <h2>Registered User</h2>
+    <table border="1px solid #ccc" id="recordtable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- user data -->
+        </tbody>
+    </table>
+
+    <script src="user.js"></script>
+</body>
+</html>
